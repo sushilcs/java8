@@ -1,0 +1,5 @@
+Ways to create a Optional Object 
+
+Optional.empty();
+Optional.of(object)//a non null value
+Optional.ofNullable(object)// if the object is null then accessing the object will be empty.

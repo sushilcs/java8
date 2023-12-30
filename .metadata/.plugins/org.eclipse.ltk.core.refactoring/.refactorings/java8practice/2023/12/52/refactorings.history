@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;com.sk.java8.PFI.Predicates&apos; to &apos;com.sk.java8.PFI.predefinedFunctionalInterfaces&apos;&#x0D;&#x0A;- Original project: &apos;java8practice&apos;&#x0D;&#x0A;- Original element: &apos;java8practice/src/com.sk.java8.PFI.Predicates&apos;&#x0D;&#x0A;- Renamed element: &apos;java8practice/src/com.sk.java8.PFI.predefinedFunctionalInterfaces&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;com.sk.java8.PFI.Predicates&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;com.sk.java8.PFI.Predicates" name="com.sk.java8.PFI.predefinedFunctionalInterfaces" qualified="false" references="true" stamp="1703921083710" textual="false" version="1.0"/>
+</session>

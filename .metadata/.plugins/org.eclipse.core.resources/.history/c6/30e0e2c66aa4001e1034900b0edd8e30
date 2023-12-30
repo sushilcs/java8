@@ -1,0 +1,12 @@
+package com.sk.java8.optional;
+
+public class Optionaltest {
+	
+	public static void main(String args[]) {
+		Computer computer = new Computer();
+		String version =computer.getSoundCard().get().getUsb().get().getVersion();
+		System.out.println(version);
+		
+	}
+
+}

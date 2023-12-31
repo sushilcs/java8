@@ -1,0 +1,55 @@
+Collection is a in memory data structure means before we start to use the data the data should have been stored in the
+data structure.
+whereas the java stream is a data structure which is on demand computation. it does not store data , it operates on the 
+source data structure(collection and array) and produces pipelined data that we can use and perform specific operations.
+Java Streams are consumeable and not possible to reuse the stream for multiple times.
+
+                        Java Stream Intermediate and Terminal Operations
+ 
+Java Stream operations that produces a new stream are called Intermediate operations.
+Commonly used Intermediate Operations are fiter() and map().
+
+
+Java Stream api operations that returns a result or produces a side effect . Once the Terminal operations are called 
+on a stream , it consumes the stream and after that we can't use the stream.
+Commonly used Terminal operations are :-
+
+forEach, toArray,min,max,findFirst,anyMatch,allMatch
+
+                 Java Short circuiting operations
+ 
+An intermediate operations is called short circuiting, if it may produces a finite stream for a infinite stream
+For example limit and skip are two short circuiting intermediate operations . A terminal operation is called short 
+circuiting ,if it may terminate in finite time for a infinite stream. for example anyMatch,allMatch,nonMatch,findFirst,
+and findAny are short circuiting terminal operations.
+                
+                Creating Stream Object
+                
+ 1. We can use Stream.of() to create stream of similar type of data.For example we can create a stream for a group
+ of integers .
+ 
+   Stream<Integer>stream = Stream.of(1,2,3,4);
+
+2.We can use Stream.of() to create Stream on array of objects . 
+Stream can not perform autoBoxing so we can't pass primitive values.
+
+Stream.of(new Integer(1,2,3,4));
+Stream.of(new int(1,2,3,4))// this will produce a compilation error.
+
+3. We can use Collection stream() for sequential stream and parallelStream() to create a ParallelStream.
+   new ArrayList().stream();
+   new ArrayList().parallelStream();
+
+4.We can use Stream.generate() and Stream.iterate() to create stream 
+
+    Stream.generate(()->{return "abc"});
+    Stream.iterate("abc",i->i);
+    
+5. We can use Arrays.stream() and String.chars();
+
+   LongStream is = Arrays.stream(new long[]{1,2,3,4});
+   IntStream is2 = "abc".chars();
+
+
+   
+                        

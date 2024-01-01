@@ -51,5 +51,7 @@ Stream.of(new int(1,2,3,4))// this will produce a compilation error.
    IntStream is2 = "abc".chars();
 
 
+Topics to revise --- Method reference, Comparator,Comparable
+
    
                         

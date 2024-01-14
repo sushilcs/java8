@@ -1,4 +1,4 @@
-package com.sk.gfgProblems;
+package com.sk.gfgProblems.arrays;
 
 public class Problem2 {
 	/*

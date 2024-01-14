@@ -1,4 +1,4 @@
-package com.sk.gfgProblems;
+package com.sk.gfgProblems.arrays;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -18,9 +18,15 @@ import java.util.TreeMap;
 public class Problem1 {
 
 	public static void main(String[] args) {
-		int[] arr = new int[] { 1, 2, 3, 4, 5, 6, 4, 3, 2, 1 };
+		int[] arr = new int[] {1,4,3,4,5,6,9,8,9,10};
+		
+		int index =0;
+		int n =arr.length;
 
 		List<Integer> list = new ArrayList<>();
+		
+		// with hashMap
+		
 		/*
 		 * Map<Integer, Integer> map = new TreeMap<>(); for (Integer obj : arr) { if
 		 * (map.containsKey(obj)) { map.put(obj, map.get(obj) + 1); } else {
@@ -41,6 +47,26 @@ public class Problem1 {
 		 * 
 		 * System.out.println(list);
 		 */
+		
+		// mathematics
+		
+		//1,4,3,4,5,6,9,8,9,10
+		  
+		
+		for(int i=0;i<arr.length;i++) {
+			index = arr[i]%n;
+			arr[index]=arr[index]+n;
+			index=0;
+		}
+		System.out.println(Arrays.toString(arr));
+		
+		for(int i=0;i<arr.length;i++) {
+			if(arr[i]/n>=2) {
+				list.add(i);
+			}
+		}
+		System.out.println(list);
+		
 		 
 	}
 

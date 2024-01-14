@@ -1,7 +1,10 @@
-package com.sk.gfgProblems;
+package com.sk.gfgProblems.arrays;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.HashMap;
+import java.util.LinkedHashMap;
+import java.util.Map;
 
 /*
  * Given an array A of positive integers. Your task is to find 
@@ -14,13 +17,14 @@ import java.util.Collections;
 public class Problem3 {
 
 	public static void main(String[] args) {
-		int arr[]=new int[] {16,17,4,3,5,2};
+
+		int arr[] = new int[] { 16, 17, 4, 3, 5, 2 };
 		int n = arr.length;
 		ArrayList<Integer> arrayList = new ArrayList<>();
-		int leader = arr[n-1];
+		int leader = arr[n - 1];
 		arrayList.add(leader);
-		for(int i=n-2;i>=0;i--) {
-			if(leader<=arr[i]) {
+		for (int i = n - 2; i >= 0; i--) {
+			if (leader <= arr[i]) {
 				leader = arr[i];
 				arrayList.add(leader);
 			}

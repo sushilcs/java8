@@ -13,6 +13,7 @@ import java.util.TreeMap;
  * to N-1, you need to find all the elements occurring more than
  * once in the given array. Return the answer in ascending order. 
  * If no such element is found, return list containing [-1]. 
+ https://www.geeksforgeeks.org/problems/find-duplicates-in-an-array/1
  */
 //1,2,3,4,5,6,4,3,2,1
 public class Problem1 {

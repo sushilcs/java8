@@ -5,7 +5,10 @@ import java.util.HashSet;
 /*
  * Given an array Arr of N positive integers and another number X.
  *  Determine whether or not there exist two 
+ *https://www.geeksforgeeks.org/problems/key-pair5616/1?itm_source=geeksforgeeks&itm_medium=
+ *article&itm_campaign=bottom_sticky_on_article
  * elements in Arr whose sum is exactly X.
+ */
 
 Example 1:
 
